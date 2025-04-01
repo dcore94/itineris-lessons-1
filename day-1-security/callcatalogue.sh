@@ -6,7 +6,7 @@ read -s password
 
 AT=$(curl -X POST $IAM -H "Content-Type: application/x-www-form-urlencoded" \
     -d "grant_type=password" -d "client_id=itineris.d4science.org" \
-    -d "username=m.lettere" -d "password=$password" \
+    -d "username=your_username" -d "password=$password" \
     -d "scope=d4s-context:$CTX" | jq -r '."access_token"')
 
 CATALOGUE="https://api.d4science.org/catalogue"

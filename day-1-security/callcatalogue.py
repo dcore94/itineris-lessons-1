@@ -3,7 +3,7 @@ import getpass
 
 context = "/d4science.research-infrastructures.eu/FARM/ITINERIS_Training-Platform"
 clientid = "itineris.d4science.org"
-user = "m.lettere"
+user = "your_username"
 pwd = getpass.getpass("Insert password: ")
 iam = "https://accounts.d4science.org/auth/realms/d4science/protocol/openid-connect/token"
 

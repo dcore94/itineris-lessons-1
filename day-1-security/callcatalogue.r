@@ -3,7 +3,7 @@ library(jsonlite)
 library(rstudioapi)
 
 # Init
-user = 'm.lettere'
+user = 'your_username'
 context = '/d4science.research-infrastructures.eu/FARM/ITINERIS_Training-Platform'
 auth_ep = 'https://accounts.d4science.org/auth/realms/d4science/protocol/openid-connect/token'
 client_id = 'itineris.d4science.org'
@@ -16,7 +16,7 @@ getToken <- function() {
 }
 
 # Auth code
-pwd = askForPassword('Password to login')
+pwd = clear('Password to login')
 jwt = getToken()
 
 catalogue = "https://api.d4science.org/catalogue"
