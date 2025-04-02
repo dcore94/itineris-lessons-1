@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import matplotlib
 import folium
 from datetime import datetime as dt
 import sys
